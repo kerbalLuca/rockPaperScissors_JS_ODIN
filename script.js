@@ -3,10 +3,13 @@ const getComputerChoise = () => {
     switch (randomNumber) {
         case 0:
             return "Rock";
+            break
         case 1:
             return "Paper";
+            break
         case 2:
             return "Scissors";
+            break
     }
 }
 const getHumanChoice = () => {
@@ -14,10 +17,13 @@ const getHumanChoice = () => {
     switch (humanNumber) {
         case 1:
             return "Rock";
+            break
         case 2:
             return "Paper";
+            break
         case 3:
             return "Scissors";
+            break
         default:
             console.log("You input a number I can't process.");
     }
@@ -38,6 +44,7 @@ const playRound = (humanChoice, getComputerChoise) => {
                     console.log("The robot plays " + getComputerChoise + " and you destroy it.");
                 }
             }
+            break
         case "Paper":
             if (getComputerChoise == "Scissor") {
                 computerScore += 1;
@@ -48,7 +55,8 @@ const playRound = (humanChoice, getComputerChoise) => {
                     console.log("The robot plays " + getComputerChoise + " and you destroy it.");
                 }
             }
-        case "Scissor":
+            break
+        case "Scissors":
             if (getComputerChoise == "Rock") {
                 computerScore += 1;
                 console.log("The robot plays " + getComputerChoise + " and destroys you.");
@@ -58,6 +66,7 @@ const playRound = (humanChoice, getComputerChoise) => {
                     console.log("The robot plays " + getComputerChoise + " and you destroy it.");
                 }
             }
+            break
     }
 }
 
