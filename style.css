@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: rgb(190, 190, 190);*/
+    background-image: linear-gradient(to bottom,rgb(190, 190, 190),rgb(52, 53, 54));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.website_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+}
+
+.theChoiceButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    width: 40%;
+    gap: 10px;
+}
+
+.theChoiceButtons button {
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 20px;
+    flex: 1 1 auto;
+}
+.heading h1 , .heading p {
+    padding: 0;
+    margin: 0;
+}
+
+.heading {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    gap: 10px;
+}
+
+.results {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    color: rgb(202, 202, 202);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.results h1, .results p, .results h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.results p {
+    margin-bottom: 30px;
+}

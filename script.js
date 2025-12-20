@@ -1,3 +1,5 @@
+
+
 const getComputerChoise = () => {
     let randomNumber = Math.round(Math.random() * 2);
     switch (randomNumber) {
@@ -74,10 +76,6 @@ function playGame () {
     humanScore = 0;
     computerScore = 0;
     playRound(getHumanChoice(),getComputerChoise());
-    playRound(getHumanChoice(),getComputerChoise());
-    playRound(getHumanChoice(),getComputerChoise());
-    playRound(getHumanChoice(),getComputerChoise());
-    playRound(getHumanChoice(),getComputerChoise());
 }
-playGame()
+//playGame()
 console.log("The final score is " + computerScore + " points for the computer and " + humanScore + " points for you.")
