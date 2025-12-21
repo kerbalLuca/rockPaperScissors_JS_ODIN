@@ -115,7 +115,8 @@ let resultHumanWin = false;
 let compChoice = "none"
 
 const buttons = document.querySelectorAll(".theChoiceButtons button");
-
+// Note to future kerbal, this bottom section contains a security vulnerability (to some extent), the user can change what the buttons do by chaning there id
+// For my purposes now it doesn't really make a diffrence
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
         console.log(button.id);
