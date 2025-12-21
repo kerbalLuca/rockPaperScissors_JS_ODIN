@@ -61,6 +61,7 @@ body {
     border-radius: 15px;
     padding: 10px;
     align-content: center;
+    text-align: center;
 }
 .results h1 {
     flex-wrap: wrap;

@@ -123,10 +123,11 @@ buttons.forEach((button) => {
         console.log(compChoice)
         resultHumanWin = playRound(button.id,compChoice);
         update(resultHumanWin);
-        button.style["border-color"] = "black";
-        setTimeout(() => {
-            button.style["border-color"] = "transparent";
-        }, 200);
-         
+        if (roundOver===false) {
+            button.style["border-color"] = "black";
+            setTimeout(() => {
+                button.style["border-color"] = "transparent";
+            }, 200);
+        } 
     })
 })
